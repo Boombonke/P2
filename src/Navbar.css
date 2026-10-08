@@ -123,6 +123,19 @@
   border-color: rgba(187, 123, 246, 0.42);
 }
 
+.navbar__logout {
+  margin-left: 8px;
+  border-color: rgba(248, 113, 113, 0.28);
+  color: #fca5a5;
+}
+
+.navbar__logout:hover,
+.navbar__logout:focus-visible {
+  color: #fff;
+  background: rgba(248, 113, 113, 0.14);
+  border-color: rgba(248, 113, 113, 0.5);
+}
+
 /* -------------------- */
 /* Tablet               */
 /* -------------------- */

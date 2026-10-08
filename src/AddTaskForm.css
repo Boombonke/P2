@@ -76,6 +76,14 @@
   line-height: 1.5;
 }
 
+.add-task__error {
+  margin: 0 0 16px;
+  color: #fca5a5;
+  font-size: 14px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 /* Close button */
 
 .add-task__close {

@@ -170,8 +170,83 @@
   font: inherit;
   font-size: 14px;
   font-weight: 600;
-  cursor: not-allowed;
+  cursor: pointer;
+}
+
+.profile-account__actions,
+.profile-edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-delete-button,
+.profile-edit-actions button {
+  width: 100%;
+  padding: 11px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-h);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-delete-button {
+  border-color: rgba(248, 113, 113, 0.4);
+  color: #f87171;
+}
+
+.profile-delete-button:disabled,
+.profile-edit-actions button:disabled {
+  cursor: wait;
   opacity: 0.65;
+}
+
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.profile-edit-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.profile-edit-form input {
+  width: 100%;
+  padding: 11px 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
+.profile-edit-actions button[type="submit"] {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.profile-error {
+  margin: 0 0 16px;
+  color: #f87171;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 420px) {
+  .profile-account__actions,
+  .profile-edit-actions {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 640px) {

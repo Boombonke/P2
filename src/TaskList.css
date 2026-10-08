@@ -61,6 +61,59 @@
   color: var(--text-h);
 }
 
+.task-title-edit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
+}
+
+.task-title-edit input {
+  min-width: 0;
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
+.task-title-edit button,
+.task-actions button {
+  padding: 6px 9px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text-h);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.task-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.task-actions .task-delete {
+  color: #f87171;
+  border-color: rgba(248, 113, 113, 0.35);
+}
+
+.api-error {
+  width: min(100%, 400px);
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  border-radius: 10px;
+  background: rgba(127, 29, 29, 0.16);
+  color: #fca5a5;
+  font-size: 14px;
+}
+
 .task-status {
   max-width: 100%;
   flex-shrink: 0;

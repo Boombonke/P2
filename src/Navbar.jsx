@@ -25,7 +25,7 @@ function FlowlyLogo() {
   );
 }
 
-function Navbar({ activePage, onNavigate }) {
+function Navbar({ activePage, onNavigate, isLoggedIn = false, onLogout }) {
   const navigationItems = [
     { label: "Pagrindinis", page: "home", disabled: false },
     { label: "Užduotys", page: null, disabled: true },
@@ -58,6 +58,11 @@ function Navbar({ activePage, onNavigate }) {
               {item.label}
             </button>
           ))}
+          {isLoggedIn && (
+            <button className="navbar__link navbar__logout" type="button" onClick={onLogout}>
+              Atsijungti
+            </button>
+          )}
         </div>
       </nav>
     </header>
